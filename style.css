@@ -1,7 +1,7 @@
 :root {
   --main-bg-color: #030712;
   --main-fg-color: #f9fafb;
-  --anchor-color: #bae6fd;
+  --accent-color: #d1d5db;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -21,16 +21,26 @@ body {
   color: var(--main-fg-color);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background: linear-gradient(45deg, #ff005e, #fbff00);
+  background: linear-gradient(45deg, var(--main-fg-color), var(--accent-color));
+  background: var(--main-fg-color);
+}
+
+.container {
+  padding: 0.5rem;
 }
 
 .main-content {
   background: var(--main-bg-color);
   border-radius: 2rem;
+  border-top-left-radius: 0;
   display: grid;
   min-height: calc(100dvh - 1rem);
   overflow: hidden;
-  transition: background 0.5s ease-in-out;
+}
+@media (min-width: 1280px) {
+  .main-content {
+    border-radius: 2rem;
+  }
 }
 
 .relative {
@@ -52,15 +62,6 @@ body {
 
 .text-center {
   text-align: center;
-}
-
-.container {
-  padding: 0.5rem;
-  animation: neon-bg 4s linear infinite;
-  -webkit-animation: neon-bg 4s linear infinite;
-  -moz-animation: neon-bg 4s linear infinite;
-  -o-animation: neon-bg 4s linear infinite;
-  -ms-animation: neon-bg 4s linear infinite;
 }
 
 .description, .email {
@@ -1123,7 +1124,7 @@ body {
 
 .slide-panel {
   position: absolute;
-  background: #d1d5db;
+  background: var(--accent-color);
   width: 70vw;
   height: 50vh;
   transform: skew(-45deg);
@@ -1477,8 +1478,6 @@ body {
 @keyframes scan-line {
   to { transform: translate(0, 2000%); }
 }
-
-
 
 @keyframes bg-change {
   10% { background: #38bdf8; }
