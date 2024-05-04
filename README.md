@@ -1,6 +1,5 @@
 # HM Interactive
-<!-- ![HM Interactive](screenshot.png) -->
-<img src="screenshot.png" alt="HM Interactive screenshot" style="border-radius: 24px;"/>
+![HM Interactive screenshot](screenshot.png)
 
 # Live Site
 [hmactive.com](https://hmactive.com/)
