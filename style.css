@@ -60,13 +60,13 @@ body {
   @media (min-width: 768px) {
     padding: 1rem;
   }
-  @media (min-width: 1568px) {
+  @media (min-width: 2048px) {
     padding: 2rem 0;
   }
 }
 
 .fw-inner-container {
-  max-width: 1536px;
+  max-width: 2048px;
   margin: 0 auto;
 }
 
