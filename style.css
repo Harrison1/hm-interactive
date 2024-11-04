@@ -334,24 +334,6 @@ body {
   }
 }
 
-.dotted-circle-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.dotted-circle {
-  width: 180px;
-  height: 180px;
-  border: 2px dashed var(--main-bg-color);
-  border-radius: 9999px;
-  @media (min-width: 1024px) {
-    width: 240px;
-    height: 240px;
-  }
-}
-
 .card-icon {
   position: relative;
   padding: 3rem 1rem;
@@ -615,15 +597,6 @@ dialog[open]::backdrop {
   }
 }
 
-.dialog-logo-gdt-dotted {
-  width: 80px;
-  height: 80px;
-  @media (min-width: 1024px) {
-    width: 240px;
-    height: 240px;
-  }
-}
-
 .dialog-header {
   position: relative;
   display: grid;
@@ -698,10 +671,6 @@ dialog[open]::backdrop {
 /* /Dialogs */
 
 /* Animation Classes */
-.rotating {
-  animation: rotating 40s linear infinite;
-}
-
 .path {
   stroke-dasharray: 8000;
   stroke-dashoffset: 8000;
@@ -716,7 +685,6 @@ dialog[open]::backdrop {
 }
 
 /* Keyframe Animations */
-@keyframes rotating { to { transform: rotate(360deg); }}
 @keyframes fill { to { fill-opacity: 1; } }
 @keyframes outline { to { stroke-dashoffset: 0; }}
 @keyframes fade-in { to { opacity: 1; } }
